@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #52b6dd;
+  background-color: #0f0442;
+}
+
+/* DM Sans */
+.font-DM-Sans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Inter */
+.font-Inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-Montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-Manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Poppins */
+.font-Poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Poppins */
+.font-Quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out all;
+}
+
+@layer utilities {
+  .clip-custom {
+    clip-path: polygon(36% 0, 100% 63%, 100% 0);
+  }
+}

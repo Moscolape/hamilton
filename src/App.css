@@ -1,0 +1,116 @@
+/* For Firefox */
+.custom-scrollbar-example::-moz-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* General styling */
+.custom-scrollbar-example::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.arrow-down {
+  font-size: 24px;
+  rotate: 180deg;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes fadeDownFast {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+.animate-fadeDownFast {
+  animation: fadeDownFast 0.5s;
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+.animate-fadeDown {
+  animation: fadeDown 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s;
+}
+
+
+
+
+@keyframes fadeRight {
+  0% {
+    transform: translateX(30%);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+.animate-fadeRight {
+  animation: fadeRight 1s;
+}
+
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-30%);
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+.animate-fadeLeft {
+  animation: fadeLeft 1s;
+}
