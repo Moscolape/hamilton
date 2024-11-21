@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <nav className="fixed shadow-md w-full bg-white text-gray-800 p-4 z-20 h-24">
+    <nav className="fixed shadow-md w-full bg-white text-gray-800 pr-4 z-20 md:h-20 h-16">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="home"
@@ -17,7 +17,7 @@ const Navbar = () => {
           duration={500}
           className="cursor-pointer hover:underline"
         >
-          <img src={logo} alt="logo" className="h-20" />
+          <img src={logo} alt="logo" className="md:h-20 h-16" />
         </Link>
         <div className="hidden md:flex space-x-4">
           {["home", "indigenous", "services", "faqs", "contact"].map((id) => (
