@@ -114,3 +114,26 @@
 .animate-fadeLeft {
   animation: fadeLeft 1s;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 25s linear infinite;
+  width: calc(265% + 1rem);
+}
+
+.animate-marquee > * {
+  flex: 0 0 auto;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

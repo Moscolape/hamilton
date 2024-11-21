@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   return (
-    <nav className="fixed w-full bg-white text-gray-800 p-4 z-10 h-24">
+    <nav className="fixed shadow-md w-full bg-white text-gray-800 p-4 z-20 h-24">
       <div className="container mx-auto flex justify-between items-center">
         <Link
           to="home"
