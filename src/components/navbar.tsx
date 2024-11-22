@@ -20,10 +20,10 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="md:h-20 h-16" />
         </Link>
         <div className="hidden md:flex space-x-4">
-          {["home", "indigenous", "services", "faqs", "contact"].map((id) => (
+          {["home", "about", "services", "faqs", "contact"].map((id) => (
             <Link
               key={id}
-              to={id}
+              to={id === "about" ? "indigenous" : id}
               smooth={true}
               duration={500}
               className="cursor-pointer hover:underline"
@@ -61,10 +61,10 @@ const Navbar = () => {
         leaveTo="opacity-0 transform -translate-y-4"
       >
         <div className="md:hidden bg-gray-800 text-white space-y-2 p-4">
-          {["home", "indigenous", "services", "faqs", "contact"].map((id) => (
+          {["home", "about", "services", "faqs", "contact"].map((id) => (
             <Link
               key={id}
-              to={id}
+              to={id === "about" ? "indigenous" : id}
               smooth={true}
               duration={500}
               className="block cursor-pointer hover:underline"

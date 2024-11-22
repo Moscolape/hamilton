@@ -5,14 +5,13 @@ interface SectionProps {
   id: string;
   title: string;
   content: string | React.ReactNode;
-  bgColor?: string;
 }
 
-const Section: React.FC<SectionProps> = ({ id, title, content, bgColor }) => (
+const Section: React.FC<SectionProps> = ({ id, title, content }) => (
   <section
     id={id}
     data-aos="fade-up"
-    className={`py-[6rem] px-3 md:px-20 ${bgColor || "bg-white"} text-gray-700`}
+    className={`py-[6rem] px-3 md:px-20 bg-white text-gray-700`}
   >
     <div className="container mx-auto">
       <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center">

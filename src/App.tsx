@@ -60,7 +60,6 @@ const App = () => {
             </ul>
           </div>
         }
-        bgColor="bg-blue-200"
       />
       <Section
         id="chip-design"
