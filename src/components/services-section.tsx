@@ -23,7 +23,7 @@ const ServicesSection = () => {
   // Check screen size
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Mobile breakpoint
+      setIsMobile(screen.width <= 768);
     };
 
     handleResize(); // Run on component mount

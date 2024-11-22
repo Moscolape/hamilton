@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "bg-pattern": "url('src/assets/cert.jpg')",
+        "bg-pattern": "url('/src/assets/cert.jpg')",
         "bg-none": "none",
       },
       screens: {
